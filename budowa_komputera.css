@@ -1,0 +1,21 @@
+body {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.title {
+	color: #cc3300;
+	font-family: Verdana;
+	font-size: 30px;
+	text-align: center;
+}
+
+.opis {
+	font-family: verdana;
+	padding-left: 30px;	
+}
+
+.lista {
+	font-family: verdana;
+	padding-left: 70px;
+}
