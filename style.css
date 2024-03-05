@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-hr {
-    border: 1px solid #1100ff
-}  
 header {
     background-color: #333;
     color: #fff;
@@ -37,18 +34,4 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-.title {
-	color: #cc3300;
-	font-family: Verdana;
-	font-size: 30px;
-	text-align: center;
-}
-.opis {
-	font-family: verdana;
-	padding-left: 30px;	
-}
-.lista {
-	font-family: verdana;
-	padding-left: 70px;
 }
