@@ -3,6 +3,10 @@ body {
 	margin-right: 100px;
 }
 
+hr {
+        color: #1100ff
+}
+
 .title {
 	color: #cc3300;
 	font-family: Verdana;
