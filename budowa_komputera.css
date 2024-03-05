@@ -2,9 +2,8 @@ body {
 	margin-left: 100px;
 	margin-right: 100px;
 }
-
 hr {
-        color: #1100ff
+    border: 1px solid #1100ff
 }
 
 .title {
