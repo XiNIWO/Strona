@@ -38,35 +38,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-.title {
-	color: #cc3300;
-	font-family: Arial;
-	font-weight: bold;
-	font-size: 30px;
-	text-align: center;
-}
-
-.p-1 {
-	font-family: verdana;
-	padding-left: 30px;	
-}
-
-.links {
-	font-family: verdana;
-	text-align: center;
-}
-
-.h3-1 {
-	font-family: Arial;
-	font-weight: bold;
-	color: #cc3300;
-}
-
-.text {
-	font-family: verdana;
-	font-size: 15px;
-}
-
-.ram-format {
-	font-weight: bold;
-}
