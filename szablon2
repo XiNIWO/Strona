@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona z trzema kolumnami</title>
+    <link rel="stylesheet" href="style_szablon2.css">
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <main>
+        <div class="left">
+            <h2>Left Column</h2>
+        </div>
+        <div class="main">
+            <h2>Main Column</h2>
+        </div>
+        <div class="right">
+            <h2>Right Column</h2>
+        </div>
+    </main>
+    <footer>
+        <h3>Footer</h3>
+    </footer>
+</body>
+</html>
