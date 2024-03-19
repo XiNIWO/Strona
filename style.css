@@ -46,3 +46,9 @@ button {
     font-family: Verdana; 
     font-weight: bold;
 }
+.content {
+	width: 78%;
+	height: 1001px;
+	background-image: url('content-1.png');
+	float: left;
+}
