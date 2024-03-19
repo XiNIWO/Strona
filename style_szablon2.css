@@ -15,19 +15,19 @@ body {
 }
 
 #left {
-    width: 170px;
+    width: 150px;
     float: left;
     background: #ABC;
 }
 
 #main {
-    width: 330px;
+    width: 300px;
     float: left;
     background: #FAC;
 }
 
 #right {
-    width: 330px;
+    width: 450px;
     float: left;
     background: #9FF;
 }
