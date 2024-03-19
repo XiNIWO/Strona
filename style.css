@@ -39,3 +39,10 @@ footer {
     bottom: 0;
     width: 100%;
 }
+button {
+    padding: 20px; 
+    font-size: 30px; 
+    color: black; 
+    font-family: Verdana; 
+    font-weight: bold;
+}
