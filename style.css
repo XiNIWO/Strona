@@ -52,3 +52,9 @@ button {
 	background-image: url('content-1.png');
 	float: left;
 }
+a {
+	padding: 20px; 
+	font-size: 30px; 
+	color: black; 
+	font-family: Verdana;
+}
