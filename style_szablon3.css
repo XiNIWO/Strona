@@ -39,7 +39,7 @@ body {
 }
 
 .nav-text-format:hover {
-    background-color: hsl(135, 88%, 61%);
+    background-color: hsl(360, 0%, 50%, 1);
     cursor: pointer;
 }
 
