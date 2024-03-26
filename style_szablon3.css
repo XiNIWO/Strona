@@ -78,7 +78,7 @@ a:active{
 }
 .format-menu-aside:hover
 {
-	background-color: hsl(135, 88%, 61%);
+	background-color: hsla(360, 0%, 50%, 1);
 	color: white;
 	cursor: pointer;
 }
