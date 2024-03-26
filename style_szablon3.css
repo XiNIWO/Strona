@@ -1,84 +1,96 @@
 body {
-	margin: 0px;
-	padding: 0px;
-	background-color: black;
+    margin: 0;
+    padding: 0;
+    background-color: black;
 }
+
 .container {
-	border: 1px solid black;
+    border: 1px solid black;
 }
+
 .header {
-	height: 150px;
-	background: #424242;
+    height: 150px;
+    background: #424242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .header-format-text {
-	padding-top: 50px;
-	font-family: verdana;
-	text-align: center;
-	color: white;
-	Font-size: 40px;
+    font-family: verdana;
+    color: white;
+    font-size: 40px;
 }
+
 .nav {
-	height: 50px;
-	background-color: #424242;
-	clear: both;
+    height: 50px;
+    background-color: #424242;
+    display: flex;
+    justify-content: center;
 }
+
 .nav-text-format {
-	float: left;
-	min-width: 50px;
-	height: 25px;
-	font-size: 18px;
-	padding: 10px;
-	border-right: 2px dotted #444444;
-	opacity: 0.8;
+    font-size: 18px;
+    padding: 10px;
+    border-right: 2px dotted #444444;
+    opacity: 0.8;
+    color: white;
+    text-decoration: none;
 }
-.nav-text-format:hover{
-	background-color: hsl(135, 88%, 61%);
-	color: white;
-	cursor: pointer;
+
+.nav-text-format:hover {
+    background-color: hsl(135, 88%, 61%);
+    cursor: pointer;
 }
+
+.left,
+.right {
+    width: 135px;
+    min-height: 495px;
+}
+
 .left {
-	width: 135px;
-	float: left;
-	background: green;
-	min-height: 495px;
+    background: green;
 }
+
 .main {
-	width: 480px;
-	float: left;
-	background: #424242;
+    flex: 1;
+    background: #424242;
+    color: white;
+    padding: 20px;
 }
-.right{
-	background-color: gray;
-	float: left;
-	width: 135px;
-	min-height: 495px;
+
+.right {
+    background-color: gray;
 }
+
 .footer {
-	clear: both;
-	background: #424242;
+    background: #424242;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
+
 a {
-	color: white;
-	text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
-a:hover{
-	color: white;
+
+a:hover,
+a:visited,
+a:active {
+    color: white;
 }
-a:visited{
-	color: white;
-}
-a:active{
-	color: white;
-}
+
 .format-menu-aside {
-	font-size:18px;
-	height:15px;
-	padding: 10px;
-	border-bottom: 2px dotted #444444;
+    font-size: 18px;
+    height: 15px;
+    padding: 10px;
+    border-bottom: 2px dotted #444444;
 }
-.format-menu-aside:hover
-{
-	background-color: hsla(360, 0%, 50%, 1);
-	color: white;
-	cursor: pointer;
+
+.format-menu-aside:hover {
+    background-color: hsla(360, 0%, 50%, 1);
+    color: white;
+    cursor: pointer;
 }
