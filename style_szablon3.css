@@ -8,7 +8,7 @@ body {
 }
 .header {
 	height: 150px;
-	background: #669900;
+	background: #424242;
 }
 .header-format-text {
 	padding-top: 50px;
@@ -19,7 +19,7 @@ body {
 }
 .nav {
 	height: 50px;
-	background-color: #99CC00;
+	background-color: #424242;
 	clear: both;
 }
 .nav-text-format {
@@ -45,7 +45,7 @@ body {
 .main {
 	width: 480px;
 	float: left;
-	background: #9FF;
+	background: #424242;
 }
 .right{
 	background-color: gray;
@@ -55,7 +55,7 @@ body {
 }
 .footer {
 	clear: both;
-	background: #999;
+	background: #424242;
 }
 a {
 	color: white;
