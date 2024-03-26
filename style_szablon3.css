@@ -1,0 +1,84 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: black;
+}
+.container {
+	border: 1px solid black;
+}
+.header {
+	height: 150px;
+	background: #669900;
+}
+.header-format-text {
+	padding-top: 50px;
+	font-family: verdana;
+	text-align: center;
+	color: white;
+	Font-size: 40px;
+}
+.nav {
+	height: 50px;
+	background-color: #99CC00;
+	clear: both;
+}
+.nav-text-format {
+	float: left;
+	min-width: 50px;
+	height: 25px;
+	font-size: 18px;
+	padding: 10px;
+	border-right: 2px dotted #444444;
+	opacity: 0.8;
+}
+.nav-text-format:hover{
+	background-color: hsl(135, 88%, 61%);
+	color: white;
+	cursor: pointer;
+}
+.left {
+	width: 135px;
+	float: left;
+	background: green;
+	min-height: 495px;
+}
+.main {
+	width: 480px;
+	float: left;
+	background: #9FF;
+}
+.right{
+	background-color: gray;
+	float: left;
+	width: 135px;
+	min-height: 495px;
+}
+.footer {
+	clear: both;
+	background: #999;
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+a:hover{
+	color: white;
+}
+a:visited{
+	color: white;
+}
+a:active{
+	color: white;
+}
+.format-menu-aside {
+	font-size:18px;
+	height:15px;
+	padding: 10px;
+	border-bottom: 2px dotted #444444;
+}
+.format-menu-aside:hover
+{
+	background-color: hsl(135, 88%, 61%);
+	color: white;
+	cursor: pointer;
+}
