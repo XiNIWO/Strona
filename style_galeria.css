@@ -1,6 +1,16 @@
 div {
-text-align:center; width:800px; margin-left:auto; margin-right:auto
+text-align:center; 
+width:800px; 
+margin-left:auto; 
+margin-right:auto;
 }
 td {
 background-color: #76787a
+}
+h1 {
+margin-bottom: 10px;
+display: inline;
+margin-right: 20px;
+color: #fff;
+text-decoration: none;
 }
