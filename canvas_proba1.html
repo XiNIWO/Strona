@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Example</title>
+    <style>
+        canvas {
+            border: 1px solid black; /* dodajemy obramowanie dla elementu canvas */
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+
+    <script>
+        // Pobieramy element canvas
+        var canvas = document.getElementById('myCanvas');
+        // Pobieramy kontekst rysowania 2D
+        var ctx = canvas.getContext('2d');
+
+        // Rysujemy prostokąt na elemencie canvas
+        ctx.fillStyle = 'blue'; // Ustawiamy kolor wypełnienia na niebieski
+        ctx.fillRect(10, 10, 150, 80); // Rysujemy prostokąt w punkcie (10, 10) o szerokości 150 i wysokości 80
+    </script>
+</body>
+</html>
