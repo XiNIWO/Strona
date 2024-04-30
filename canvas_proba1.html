@@ -3,25 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canvas Example</title>
+    <title>Canvas Animation</title>
     <style>
         canvas {
-            border: 1px solid black; /* dodajemy obramowanie dla elementu canvas */
+            border: 1px solid black;
         }
     </style>
 </head>
 <body>
-    <canvas id="myCanvas" width="200" height="100"></canvas>
-
+    <canvas id="myCanvas"></canvas>
+    
     <script>
         // Pobieramy element canvas
         var canvas = document.getElementById('myCanvas');
-        // Pobieramy kontekst rysowania 2D
         var ctx = canvas.getContext('2d');
-
-        // Rysujemy prostokąt na elemencie canvas
-        ctx.fillStyle = 'blue'; // Ustawiamy kolor wypełnienia na niebieski
-        ctx.fillRect(10, 10, 150, 80); // Rysujemy prostokąt w punkcie (10, 10) o szerokości 150 i wysokości 80
+        
+        // Ustawiamy szerokość i wysokość canvas
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        
+        // Inicjalizujemy zmienne
+        var amplitude = 100; // Amplituda fali
+        var frequency = 0.01; // Częstotliwość fali
+        var phase = 0; // Faza fali
+        var speed = 0.1; // Prędkość animacji
+        
+        // Funkcja rysująca sinusoidę
+        function drawSinusoid() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height); // Czyszczenie canvas
+            
+            ctx.beginPath();
+            ctx.moveTo(0, canvas.height / 2);
+            for (var x = 0; x < canvas.width; x++) {
+                var y = canvas.height / 2 + amplitude * Math.sin(frequency * x + phase);
+                ctx.lineTo(x, y);
+            }
+            ctx.strokeStyle = 'blue';
+            ctx.stroke();
+            
+            phase += speed; // Aktualizacja fazy dla animacji
+        }
+        
+        // Funkcja animacji
+        function animate() {
+            requestAnimationFrame(animate);
+            drawSinusoid();
+        }
+        
+        animate(); // Rozpoczęcie animacji
     </script>
 </body>
 </html>
