@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canvas Animation Example</title>
+<style>
+    body {
+        margin: 0;
+        overflow: hidden;
+    }
+    canvas {
+        display: block;
+        background-color: #f0f0f0;
+        margin: auto;
+    }
+</style>
+</head>
+<body>
+<canvas id="myCanvas"></canvas>
 
+<script>
+    // Pobranie elementu canvas i jego kontekstu rysowania 2D
+    var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+
+    // Ustawienie rozmiaru canvas
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    // Definicja obiektu reprezentującego kwadrat
+    var square = {
+        x: canvas.width / 2, // początkowe położenie x
+        y: canvas.height / 2, // początkowe położenie y
+        size: 50, // rozmiar kwadratu
+        speed: 2, // prędkość ruchu
+        color: '#ff0000' // kolor kwadratu
+    };
+
+    // Funkcja rysująca kwadrat na canvas
+    function drawSquare() {
+        ctx.fillStyle = square.color;
+        ctx.fillRect(square.x - square.size / 2, square.y - square.size / 2, square.size, square.size);
+    }
+
+    // Funkcja aktualizująca pozycję kwadratu
+    function update() {
+        // Zmiana pozycji kwadratu na osi x
+        square.x += square.speed;
+
+        // Jeśli kwadrat dotyka prawego lub lewego brzegu canvas, odwróć kierunek
+        if (square.x + square.size / 2 > canvas.width || square.x - square.size / 2 < 0) {
+            square.speed = -square.speed;
+        }
+    }
+
+    // Główna pętla animacji
+    function animate() {
+        // Wyczyść canvas
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Aktualizuj pozycję kwadratu
+        update();
+
+        // Narysuj kwadrat
+        drawSquare();
+
+        // Powtórz animację
+        requestAnimationFrame(animate);
+    }
+
+    // Rozpoczęcie animacji
+    animate();
+</script>
+</body>
+</html>
