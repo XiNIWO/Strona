@@ -85,3 +85,7 @@ section {
 img {
 	width: 100%;
 }
+hr {
+	border: 2px;
+	color: white;
+}
