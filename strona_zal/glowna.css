@@ -18,6 +18,9 @@ nav {
 	padding: 2em;
     position: relative;
 }
+h1 {
+	font-size: 100px;
+}
 ul {
 	list-style-type: none;
 	display: flex;
