@@ -36,6 +36,14 @@ nav {
 	height: 4px;
 	padding: 2em;
 }
+ul {
+	list-style-type: none;
+	display: flex;
+	width: 55%;
+	justify-content: space-around;
+}
+
+}
 img{ 
 float: left; 
 margin-left: 15px;
