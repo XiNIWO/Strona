@@ -62,3 +62,7 @@ footer {
     bottom: 0;
     width: 100%;
 }
+section {
+	text-align: center;
+	color: #fff;
+}
