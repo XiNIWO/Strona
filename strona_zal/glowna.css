@@ -23,6 +23,9 @@ h1 {
 	text-align: center;
 	line-height: 6; 
 }
+h2 {
+	font-size: 35px;
+}
 ul {
 	list-style-type: none;
 	display: flex;
