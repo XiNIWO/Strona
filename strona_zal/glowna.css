@@ -74,6 +74,7 @@ button {
 	background-color: rgb(130,130,130);
 	min-width: 100px;
 	box-shadow: 2px 2px 5px hsl(0, 0%, 0.8);
+	border-radius: 20px;
 }
 .dropdown:hover .kontent{
 	display: block;
