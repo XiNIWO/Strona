@@ -9,9 +9,6 @@ html {
 body {
 	background-color: rgb(38, 38, 38);
 }
-.logo {
-    width:35em;
-}
 nav { 
     background-color: rgb(94, 94, 94);
 	display: flex;
