@@ -7,34 +7,17 @@ html {
     font-size: 10px;
     overflow-x: hidden;
 }
-body {
-    background-color: rgba(255, 0, 0, 0);
-    background-image: radial-gradient(circle, rgba(255, 0, 0, 0) 0%, rgba(0, 0, 0, 0.69) 100%);
-}
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-header h1 {
-    margin-bottom: 10px;
-}
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.logo {
+    width:35em;
 }
 nav { 
+    background-color: rgb(94, 94, 94);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 4px;
+	height: 8vh;
 	padding: 2em;
+    position: relative;
 }
 ul {
 	list-style-type: none;
@@ -42,9 +25,32 @@ ul {
 	width: 55%;
 	justify-content: space-around;
 }
-
+a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: bold;
+    position: relative;
+    padding: .2em;
+    color: var(--blue);
 }
-img{ 
-float: left; 
-margin-left: 15px;
+a::after {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10%;
+    background-color: var(--blue);
+    height: .15em;
+    border-radius: 15px;
+    transition: .3 ease-in-out;
+}
+a:hover::after {
+    width: 100%;
+}
+.menu {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
 }
