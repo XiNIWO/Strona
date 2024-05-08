@@ -43,6 +43,8 @@ button {
     color: black; 
     font-family: Verdana; 
     font-weight: bold;
+section {
+	padding: 10px;
 }
 .content {
 	width: 25%;
