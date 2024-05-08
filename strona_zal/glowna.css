@@ -87,3 +87,8 @@ button {
 .dropdown a:hover{
 	background-color: rgb(120,120,120);
 }
+img{ 
+float: right; 
+margin-left: 15px;
+}
+	
