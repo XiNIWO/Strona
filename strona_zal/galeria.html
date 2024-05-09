@@ -1,1 +1,52 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>janowice</title>
+<meta name"author" content="Dominik Pientka">
+<meta name="description" content="Oto moja strona na zajęciach">
+<meta name="keywords" content="szkoła, lekcje, temat, nauka, html">
+<link rel="stylesheet" href="glowna.css">
+<link rel="icon" href="/zdjecia/1.2.png" type="image/x-icon">
+</head>
+<body>
+  <script>
+  let slideIndex = 0;
+  showSlide(slideIndex);
 
+  function prevSlide() {
+    showSlide(slideIndex -= 1);
+  }
+
+  function nextSlide() {
+    showSlide(slideIndex += 1);
+  }
+
+  function showSlide(n) {
+    const slides = document.querySelectorAll('.gallery img');
+    if (n >= slides.length) {
+      slideIndex = 0;
+    }
+    if (n < 0) {
+      slideIndex = slides.length - 1;
+    }
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex].style.display = "block";
+  }
+</script>
+  
+  <div class="gallery-container">
+  <div class="gallery">
+    <img src="2.1.jpg" alt="1">
+    <img src="2.2.jpg" alt="2">
+    <img src="2.3.jpg" alt="3">
+  </div>
+  <div class="prev" onclick="prevSlide()">&#10094; Previous</div>
+  <div class="next" onclick="nextSlide()">Next &#10095;</div>
+</div>
+
+
+</body>
+</html>
