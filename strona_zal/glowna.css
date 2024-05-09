@@ -96,8 +96,7 @@ hr {
 .powrot {
 	color: #fff;
 }
-<style>
-  .gallery-container {
+.gallery-container {
     width: 80%;
     margin: auto;
     overflow: hidden;
@@ -119,10 +118,14 @@ hr {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
+    z-index: 1;
   }
   .prev {
     left: 0;
   }
   .next {
     right: 0;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
   }
