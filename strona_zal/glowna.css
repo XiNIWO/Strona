@@ -96,3 +96,33 @@ hr {
 .powrot {
 	color: #fff;
 }
+<style>
+  .gallery-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+  }
+  .gallery {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 0;
+  }
