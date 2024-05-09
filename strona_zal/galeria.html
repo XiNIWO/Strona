@@ -10,52 +10,7 @@
 <link rel="icon" href="/zdjecia/1.2.png" type="image/x-icon">
 </head>
 <body>
- <style>
-  .gallery-container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-  }
-  .gallery {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  .gallery img {
-    width: 100%;
-    height: auto;
-  }
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    z-index: 1;
-  }
-  .prev {
-    left: 0;
-  }
-  .next {
-    right: 0;
-  }
-  .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-</style>
-</head>
-<body>
-<div class="gallery-container">
-  <div class="gallery">
-    <img src="image1.jpg" alt="Image 1">
-    <img src="image2.jpg" alt="Image 2">
-    <img src="image3.jpg" alt="Image 3">
-  </div>
-  <div class="prev" onclick="prevSlide()" aria-label="Previous">&#10094;</div>
-  <div class="next" onclick="nextSlide()" aria-label="Next">&#10095;</div>
-</div>
+
 
 <script>
   let slideIndex = 0;
@@ -93,5 +48,14 @@
     }
   });
 </script>
+ <div class="gallery-container">
+  <div class="gallery">
+    <img src="image1.jpg" alt="Image 1">
+    <img src="image2.jpg" alt="Image 2">
+    <img src="image3.jpg" alt="Image 3">
+  </div>
+  <div class="prev" onclick="prevSlide()" aria-label="Previous">&#10094;</div>
+  <div class="next" onclick="nextSlide()" aria-label="Next">&#10095;</div>
+</div>
 </body>
 </html>
