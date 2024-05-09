@@ -10,7 +10,15 @@
 <link rel="icon" href="/zdjecia/1.2.png" type="image/x-icon">
 </head>
 <body>
-
+ <div class="gallery-container">
+  <div class="gallery">
+    <img src="image1.jpg" alt="Image 1">
+    <img src="image2.jpg" alt="Image 2">
+    <img src="image3.jpg" alt="Image 3">
+  </div>
+  <div class="prev" onclick="prevSlide()" aria-label="Previous">&#10094;</div>
+  <div class="next" onclick="nextSlide()" aria-label="Next">&#10095;</div>
+</div>
 
 <script>
   let slideIndex = 0;
@@ -48,14 +56,6 @@
     }
   });
 </script>
- <div class="gallery-container">
-  <div class="gallery">
-    <img src="image1.jpg" alt="Image 1">
-    <img src="image2.jpg" alt="Image 2">
-    <img src="image3.jpg" alt="Image 3">
-  </div>
-  <div class="prev" onclick="prevSlide()" aria-label="Previous">&#10094;</div>
-  <div class="next" onclick="nextSlide()" aria-label="Next">&#10095;</div>
-</div>
+
 </body>
 </html>
