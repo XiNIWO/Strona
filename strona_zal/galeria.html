@@ -10,52 +10,22 @@
 <link rel="icon" href="/zdjecia/1.2.png" type="image/x-icon">
 </head>
 <body>
- <div class="gallery-container">
-  <div class="gallery">
-    <img src="/zdjecia/2.1.jpg" alt="Image 1">
-    <img src="/zdjecia/2.2.jpg" alt="Image 2">
-    <img src="/zdjecia/2.3.jpg" alt="Image 3">
+
+<div class="gallery-row">
+    <a href="/zdjecia/2.1.jpg" class="gallery-thumbnail gallery-item"><img src="/zdjecia/2.1.jpg" alt="Miniatura zdjęcia"></a>
+    <a href="/zdjecia/2.2.jpg" class="gallery-thumbnail gallery-item"><img src="/zdjecia/2.2.jpg" alt="Miniatura zdjęcia"></a>
+    <a href="/zdjecia/2.3.jpg" class="gallery-thumbnail gallery-item"><img src="/zdjecia/2.3.jpg" alt="Miniatura zdjęcia"></a>
+    <a href="/zdjecia/2.4.jpg" class="gallery-thumbnail gallery-item"><img src="/zdjecia/2.4.jpg" alt="Miniatura zdjęcia"></a>
+    <a href="/zdjecia/2.5.jpg" class="gallery-thumbnail gallery-item"><img src="/zdjecia/2.5.jpg" alt="Miniatura zdjęcia"></a>
   </div>
-  <div class="prev" onclick="prevSlide()" aria-label="Previous">&#10094;</div>
-  <div class="next" onclick="nextSlide()" aria-label="Next">&#10095;</div>
-</div>
+  <div class="gallery-row">
+    <a href="/zdjecia/2.1.jpg" class="gallery-thumbnail gallery-item"><img src="/zdjecia/2.1.jpg" alt="Miniatura zdjęcia"></a>
+    <a href="/zdjecia/2.1.jpg" class="gallery-thumbnail gallery-item"><img src="/zdjecia/2.1.jpg" alt="Miniatura zdjęcia"></a>
+    <a href="/zdjecia/2.1.jpg" class="gallery-thumbnail gallery-item"><img src="/zdjecia/2.1.jpg" alt="Miniatura zdjęcia"></a>
+    <a href="/zdjecia/2.1.jpg" class="gallery-thumbnail gallery-item"><img src="/zdjecia/2.1.jpg" alt="Miniatura zdjęcia"></a>
+    <a href="/zdjecia/2.1.jpg" class="gallery-thumbnail gallery-item"><img src="/zdjecia/2.1.jpg" alt="Miniatura zdjęcia"></a>
+  </div>
 
-<script>
-  let slideIndex = 0;
-  showSlide(slideIndex);
-
-  function prevSlide() {
-    showSlide(slideIndex -= 1);
-  }
-
-  function nextSlide() {
-    showSlide(slideIndex += 1);
-  }
-
-  function showSlide(n) {
-    const slides = document.querySelectorAll('.gallery img');
-    if (n >= slides.length) {
-      slideIndex = 0;
-    }
-    if (n < 0) {
-      slideIndex = slides.length - 1;
-    }
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.opacity = "0";
-    }
-    slides[slideIndex].style.opacity = "1";
-    slides[slideIndex].style.transition = "opacity 0.5s ease";
-  }
-
-  // Obsługa klawiatury
-  document.addEventListener("keydown", function(event) {
-    if (event.key === "ArrowLeft") {
-      prevSlide();
-    } else if (event.key === "ArrowRight") {
-      nextSlide();
-    }
-  });
-</script>
 
 </body>
 </html>
